@@ -76,19 +76,28 @@ img {
 
 .names {
   margin: 0;
-  color: #2f3425;
-  font-family: "Marck Script", cursive;
-  font-size: clamp(54px, 10vw, 118px);
+  color: #ffffff;
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(68px, 11vw, 150px);
   font-weight: 400;
-  line-height: .9;
+  line-height: .82;
   text-transform: none;
-  text-shadow: none;
-  transform: rotate(-6deg);
+  letter-spacing: 0;
+  text-shadow:
+    0 2px 10px rgba(0,0,0,.28);
+}
+
+.names small {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: .42em;
+  font-weight: 400;
 }
 
 .names span {
   display: block;
-  padding-left: clamp(72px, 18vw, 260px);
+  margin-top: -10px;
+  padding-left: clamp(90px, 18vw, 250px);
 }
 
 .hero-date {
