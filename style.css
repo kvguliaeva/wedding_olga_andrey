@@ -660,14 +660,13 @@ p {
 
 .confirm-card h2 {
   color: #242719;
-  font-family: var(--script-font);
-  font-size: clamp(40px, 6vw, 62px);
+  font-family: "Italianno", cursive;
+  font-size: clamp(54px, 8vw, 84px);
   font-weight: 400;
-  font-synthesis: none;
-  line-height: .9;
-  letter-spacing: .01em;
+  line-height: .82;
+  letter-spacing: 0;
   text-transform: none;
-  opacity: .92;
+  opacity: .95;
 }
 
 .confirm-date {
