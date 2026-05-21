@@ -76,17 +76,19 @@ img {
 
 .names {
   margin: 0;
-  font-family: Forum, Georgia, serif;
+  color: #2f3425;
+  font-family: "Marck Script", cursive;
   font-size: clamp(54px, 10vw, 118px);
   font-weight: 400;
-  line-height: .82;
-  text-transform: uppercase;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, .42);
+  line-height: .9;
+  text-transform: none;
+  text-shadow: none;
+  transform: rotate(-6deg);
 }
 
 .names span {
   display: block;
-  padding-left: clamp(104px, 25vw, 340px);
+  padding-left: clamp(72px, 18vw, 260px);
 }
 
 .hero-date {
