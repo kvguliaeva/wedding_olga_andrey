@@ -77,27 +77,27 @@ img {
 .names {
   margin: 0;
   color: #ffffff;
-  font-family: "Great Vibes", cursive;
-  font-size: clamp(68px, 11vw, 150px);
+  font-family: "Italianno", cursive;
+  font-size: clamp(88px, 13vw, 190px);
   font-weight: 400;
-  line-height: .82;
-  text-transform: none;
+  line-height: .72;
   letter-spacing: 0;
+  text-transform: none;
   text-shadow:
-    0 2px 10px rgba(0,0,0,.28);
+    0 2px 12px rgba(0,0,0,.18);
 }
 
 .names small {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 12px;
   font-size: .42em;
-  font-weight: 400;
+  vertical-align: middle;
 }
 
 .names span {
   display: block;
-  margin-top: -10px;
-  padding-left: clamp(90px, 18vw, 250px);
+  margin-top: -6px;
+  padding-left: clamp(120px, 18vw, 280px);
 }
 
 .hero-date {
