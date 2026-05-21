@@ -89,9 +89,9 @@ img {
 
 .names small {
   display: inline-block;
-  margin-left: 16px;
-  margin-right: 16px;
-  font-size: .9em;
+  margin-left: 18px;
+  margin-right: 18px;
+  font-size: .75em;
   vertical-align: baseline;
 }
 
