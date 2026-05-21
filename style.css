@@ -1,9 +1,17 @@
+@font-face {
+  font-family: "Christopher";
+  src: url("assets/fonts/Christopher.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --cream: #eee4cf;
-  --cream-soft: #f8f1e4;
-  --sage: #aebfa9;
-  --sage-light: #c6d1bf;
-  --olive: #59672e;
+  --cream: #f4f0e6;
+  --cream-soft: #fffaf0;
+  --sage: #dfe3d2;
+  --sage-light: #eef1e5;
+  --olive: #566331;
   --olive-dark: #344024;
   --brown: #6b5845;
   --text: #3f4a2b;
@@ -11,6 +19,7 @@
   --white: #fffaf0;
   --shadow: rgba(64, 51, 35, .18);
   --hero-image: url("assets/images/hero.jpg");
+  --script-font: "Christopher", "Italianno", cursive;
 }
 
 * {
@@ -55,10 +64,10 @@ img {
   position: relative;
   display: grid;
   align-items: end;
-  min-height: clamp(620px, 92svh, 900px);
-  padding: 0 clamp(24px, 8vw, 92px) clamp(64px, 9vw, 106px);
+  min-height: clamp(560px, 82svh, 760px);
+  padding: 0 clamp(24px, 7vw, 92px) clamp(46px, 7vw, 76px);
   color: var(--white);
-  background: var(--hero-image) center center / cover no-repeat;
+  background: var(--hero-image) center 58% / cover no-repeat;
   isolation: isolate;
 }
 
@@ -71,44 +80,53 @@ img {
 }
 
 .hero__content {
-  width: min(880px, 100%);
+  width: min(1180px, 100%);
+  margin: 0 auto;
 }
 
 .names {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  column-gap: clamp(18px, 4vw, 58px);
   margin: 0;
   color: #ffffff;
-  font-family: "Italianno", cursive;
-  font-size: clamp(88px, 13vw, 190px);
+  font-family: var(--script-font);
+  font-size: clamp(86px, 10vw, 168px);
   font-weight: 400;
-  line-height: .72;
+  font-synthesis: none;
+  line-height: .76;
   letter-spacing: 0;
   text-transform: none;
+  opacity: .92;
   text-shadow:
-    0 2px 12px rgba(0,0,0,.18);
+    0 1px 8px rgba(0,0,0,.14);
 }
 
-.names small {
-  display: inline-block;
-  margin-left: 18px;
-  margin-right: 18px;
-  font-size: .75em;
-  vertical-align: baseline;
+.names__first {
+  justify-self: start;
 }
 
-.names span {
-  display: block;
-  margin-top: -6px;
-  padding-left: clamp(120px, 18vw, 280px);
+.names__amp {
+  justify-self: center;
+  font-size: .58em;
+  line-height: .7;
+}
+
+.names__second {
+  justify-self: end;
 }
 
 .hero-date {
-  margin: 28px 0 0;
+  margin: clamp(24px, 3vw, 38px) 0 0;
   color: var(--white);
-  font-family: Forum, Georgia, serif;
-  font-size: clamp(30px, 5vw, 58px);
-  line-height: 1;
+  font-family: var(--script-font);
+  font-size: clamp(56px, 6.8vw, 104px);
+  font-synthesis: none;
+  line-height: .8;
   text-align: center;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, .5);
+  opacity: .92;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, .28);
 }
 
 .section {
@@ -137,19 +155,28 @@ img {
 h2 {
   margin: 0 0 18px;
   color: var(--olive);
-  font-family: Forum, Georgia, serif;
-  font-size: clamp(40px, 7vw, 68px);
+  font-family: var(--script-font);
+  font-size: clamp(54px, 9vw, 92px);
   font-weight: 400;
-  line-height: .95;
+  font-synthesis: none;
+  line-height: .78;
 }
 
 .intro-title {
   display: grid;
-  gap: 6px;
+  gap: 8px;
   margin-bottom: 34px;
   color: #242719;
-  font-size: clamp(48px, 8vw, 82px);
-  line-height: .92;
+  font-family: var(--script-font);
+  font-size: clamp(52px, 9vw, 98px);
+  font-weight: 400;
+  font-synthesis: none;
+  line-height: .78;
+  text-align: center;
+}
+
+.intro-title span {
+  white-space: nowrap;
 }
 
 p {
@@ -185,9 +212,9 @@ p {
 .countdown__label {
   margin-bottom: 14px;
   color: var(--olive);
-  font-family: Forum, Georgia, serif;
-  font-size: clamp(22px, 3.8vw, 32px);
-  line-height: 1;
+  font-family: var(--script-font);
+  font-size: clamp(34px, 6vw, 58px);
+  line-height: .8;
 }
 
 .countdown__grid {
@@ -204,10 +231,10 @@ p {
 
 .countdown__grid strong {
   color: var(--olive);
-  font-family: Forum, Georgia, serif;
-  font-size: clamp(34px, 7vw, 58px);
+  font-family: var(--script-font);
+  font-size: clamp(52px, 9vw, 84px);
   font-weight: 400;
-  line-height: .95;
+  line-height: .75;
 }
 
 .countdown__grid span {
@@ -264,9 +291,9 @@ p {
 .month {
   margin: 0 0 21px;
   color: var(--cream);
-  font-family: Forum, Georgia, serif;
-  font-size: clamp(42px, 6vw, 62px);
-  line-height: 1;
+  font-family: var(--script-font);
+  font-size: clamp(68px, 11vw, 112px);
+  line-height: .75;
 }
 
 .cal-grid {
@@ -374,9 +401,9 @@ p {
 .event time {
   display: block;
   color: var(--olive);
-  font-family: Forum, Georgia, serif;
-  font-size: clamp(22px, 3.8vw, 34px);
-  line-height: 1;
+  font-family: var(--script-font);
+  font-size: clamp(38px, 6.5vw, 62px);
+  line-height: .78;
 }
 
 .event span {
@@ -431,9 +458,9 @@ p {
 .venue-name {
   margin: 1px 0 4px;
   color: var(--olive);
-  font-family: Forum, Georgia, serif;
-  font-size: clamp(44px, 6vw, 66px);
-  line-height: .9;
+  font-family: var(--script-font);
+  font-size: clamp(68px, 10vw, 102px);
+  line-height: .72;
 }
 
 .map-button {
@@ -633,16 +660,17 @@ p {
 
 .confirm-card h2 {
   color: #242719;
+  font-size: clamp(42px, 7vw, 68px);
   text-transform: uppercase;
 }
 
 .confirm-date {
   margin-top: 14px !important;
   color: #242719 !important;
-  font-family: Forum, Georgia, serif !important;
-  font-size: clamp(28px, 6vw, 46px) !important;
-  line-height: 1 !important;
-  text-transform: uppercase;
+  font-family: var(--script-font) !important;
+  font-size: clamp(46px, 8vw, 76px) !important;
+  line-height: .8 !important;
+  text-transform: none;
 }
 
 .reveal {
@@ -681,14 +709,26 @@ p {
   .hero {
     min-height: 640px;
     padding: 0 22px 62px;
+    background-position: center center;
   }
 
   .names {
-    font-size: 52px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 0;
+    font-size: 84px;
+    line-height: .72;
   }
 
-  .names span {
-    padding-left: 92px;
+  .names__first,
+  .names__amp,
+  .names__second {
+    justify-self: center;
+  }
+
+  .names__amp {
+    margin: -8px 0 -2px;
+    font-size: .58em;
   }
 
   .section {
