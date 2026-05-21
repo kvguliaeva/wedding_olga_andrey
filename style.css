@@ -1,8 +1,8 @@
 :root {
   --cream: #eee4cf;
   --cream-soft: #f8f1e4;
-  --sage: #d3d7bd;
-  --sage-light: #e2e4cf;
+  --sage: #aebfa9;
+  --sage-light: #c6d1bf;
   --olive: #59672e;
   --olive-dark: #344024;
   --brown: #6b5845;
@@ -532,6 +532,10 @@ p {
 
 .palette__swatch--lime {
   background: #b9c78c;
+}
+
+.palette__swatch--black {
+  background: #1e2119;
 }
 
 .wishes,
